@@ -1,0 +1,159 @@
+[src/lib/precalculate.h:126] -> [src/lib/precalculate.h:127]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/precalculate.h:127] -> [src/lib/precalculate.h:130]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/precalculate.h:150] -> [src/lib/precalculate.h:151]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/cache.cpp:133] -> [src/lib/cache.cpp:134]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/cache.cpp:134] -> [src/lib/cache.cpp:135]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/cache.cpp:135] -> [src/lib/cache.cpp:139]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/cache.cpp:139] -> [src/lib/cache.cpp:146]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/cache.cpp:135] -> [src/lib/cache.cpp:154]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/matrix.h:109] -> [src/lib/matrix.h:110]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/matrix.h:130] -> [src/lib/matrix.h:131]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/matrix.h:53] -> [src/lib/matrix.h:54]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/matrix.h:64] -> [src/lib/matrix.h:65]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/tree.h:30] -> [src/lib/tree.h:49]: (style, inconclusive) Member variable 'frame::orientation_m' is in the wrong place in the initializer list.
+[src/lib/precalculate.h:118] -> [src/lib/precalculate.h:164]: (style, inconclusive) Member variable 'precalculate::m_atom_typing_used' is in the wrong place in the initializer list.
+[src/lib/common.h:123]: (performance, inconclusive) Technically the member function 'vec::size' can be static (but you may consider moving to unnamed namespace).
+[src/lib/tree.h:90]: (performance, inconclusive) Technically the member function 'rigid_body::count_torsions' can be static (but you may consider moving to unnamed namespace).
+[src/lib/tree.h:91]: (performance, inconclusive) Technically the member function 'rigid_body::set_derivative' can be static (but you may consider moving to unnamed namespace).
+[src/lib/tree.h:128]: (performance, inconclusive) Technically the member function 'segment::count_torsions' can be static (but you may consider moving to unnamed namespace).
+[src/lib/tree.h:143]: (performance, inconclusive) Technically the member function 'first_segment::count_torsions' can be static (but you may consider moving to unnamed namespace).
+[src/lib/model.h:187]: (performance, inconclusive) Technically the member function 'model::write_context' can be static (but you may consider moving to unnamed namespace).
+[src/lib/grid.h:39]: (style) Class 'grid' has a constructor with 1 argument that is not explicit.
+[src/lib/file.h:36]: (style) Struct 'ifile' has a constructor with 1 argument that is not explicit.
+[src/lib/file.h:47]: (style) Struct 'ofile' has a constructor with 1 argument that is not explicit.
+[src/lib/conf.h:217]: (style) Struct 'change' has a constructor with 1 argument that is not explicit.
+[src/lib/conf.h:279]: (style) Struct 'conf' has a constructor with 1 argument that is not explicit.
+[src/lib/tree.h:30]: (style) Struct 'frame' has a constructor with 1 argument that is not explicit.
+[src/lib/tree.h:137]: (style) Struct 'first_segment' has a constructor with 1 argument that is not explicit.
+[src/lib/model.h:56]: (style) Struct 'residue' has a constructor with 1 argument that is not explicit.
+[src/lib/tree.h:190]: (style) Struct 'heterotree < rigid_body >' has a constructor with 1 argument that is not explicit.
+[src/lib/tree.h:190]: (style) Struct 'heterotree < first_segment >' has a constructor with 1 argument that is not explicit.
+[src/lib/tree.h:168]: (style) Struct 'tree < segment >' has a constructor with 1 argument that is not explicit.
+[src/lib/igrid.h:31] -> [src/lib/cache.h:38]: (style) The function 'eval' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/igrid.h:32] -> [src/lib/cache.h:39]: (style) The function 'eval_deriv' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/common.h:59]: (warning, inconclusive) Member variable 'vec::data' is not initialized in the constructor.
+[src/lib/common.h:150]: (warning, inconclusive) Member variable 'mat::data' is not initialized in the constructor.
+[src/lib/current_weights.cpp:45]: (style) Variable 'tmp_size' is assigned a value that is never used.
+[src/lib/current_weights.cpp:46]: (style) Variable 'conf_indep_size' is assigned a value that is never used.
+[src/lib/current_weights.cpp:47]: (style) Variable 't_size' is assigned a value that is never used.
+[src/lib/current_weights.cpp:48]: (style) Variable 't_names_size' is assigned a value that is never used.
+[src/lib/terms.h:43]: (style) Struct 'usable' has a constructor with 1 argument that is not explicit.
+[src/lib/terms.h:71]: (style) Struct 'conf_independent_inputs' has a constructor with 1 argument that is not explicit.
+[src/lib/terms.h:37] -> [src/lib/terms.h:44]: (style) The function 'eval' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/everything.cpp:75]: (style) Variable 't1' is assigned a value that is never used.
+[src/lib/everything.cpp:76]: (style) Variable 't2' is assigned a value that is never used.
+[src/lib/everything.cpp:303]: (style) Variable 'd' is assigned a value that is never used.
+[src/lib/everything.cpp:65] -> [src/lib/everything.cpp:62]: (style, inconclusive) Member variable 'ad4_solvation::desolvation_sigma' is in the wrong place in the initializer list.
+[src/lib/terms.h:37] -> [src/lib/everything.cpp:38]: (style) The function 'eval' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/terms.h:37] -> [src/lib/everything.cpp:68]: (style) The function 'eval' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/terms.h:47] -> [src/lib/everything.cpp:104]: (style) The function 'eval' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/terms.h:47] -> [src/lib/everything.cpp:114]: (style) The function 'eval' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/terms.h:47] -> [src/lib/everything.cpp:140]: (style) The function 'eval' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/terms.h:47] -> [src/lib/everything.cpp:153]: (style) The function 'eval' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/terms.h:47] -> [src/lib/everything.cpp:176]: (style) The function 'eval' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/terms.h:47] -> [src/lib/everything.cpp:201]: (style) The function 'eval' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/terms.h:93] -> [src/lib/everything.cpp:222]: (style) The function 'size' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/terms.h:92] -> [src/lib/everything.cpp:223]: (style) The function 'eval' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/terms.h:93] -> [src/lib/everything.cpp:232]: (style) The function 'size' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/terms.h:92] -> [src/lib/everything.cpp:233]: (style) The function 'eval' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/terms.h:93] -> [src/lib/everything.cpp:241]: (style) The function 'size' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/terms.h:92] -> [src/lib/everything.cpp:242]: (style) The function 'eval' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/terms.h:93] -> [src/lib/everything.cpp:250]: (style) The function 'size' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/terms.h:92] -> [src/lib/everything.cpp:251]: (style) The function 'eval' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/terms.h:93] -> [src/lib/everything.cpp:259]: (style) The function 'size' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/terms.h:92] -> [src/lib/everything.cpp:260]: (style) The function 'eval' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/terms.h:93] -> [src/lib/everything.cpp:268]: (style) The function 'size' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/terms.h:92] -> [src/lib/everything.cpp:269]: (style) The function 'eval' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/terms.h:93] -> [src/lib/everything.cpp:277]: (style) The function 'size' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/terms.h:92] -> [src/lib/everything.cpp:278]: (style) The function 'eval' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/terms.h:93] -> [src/lib/everything.cpp:286]: (style) The function 'size' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/terms.h:92] -> [src/lib/everything.cpp:287]: (style) The function 'eval' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/terms.h:93] -> [src/lib/everything.cpp:295]: (style) The function 'size' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/terms.h:92] -> [src/lib/everything.cpp:296]: (style) The function 'eval' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/manifold.cpp:103] -> [src/lib/manifold.cpp:124]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/model.cpp:199] -> [src/lib/model.cpp:200]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/model.cpp:324] -> [src/lib/model.cpp:337]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/model.cpp:337] -> [src/lib/model.cpp:340]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/model.cpp:324] -> [src/lib/model.cpp:355]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/model.cpp:447] -> [src/lib/model.cpp:450]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/model.cpp:517] -> [src/lib/model.cpp:519]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/model.cpp:682] -> [src/lib/model.cpp:687]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/common.h:304] -> [src/lib/model.cpp:723]: (style) Local variable sum shadows outer function
+[src/lib/model.cpp:725] -> [src/lib/model.cpp:729]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/common.h:304] -> [src/lib/model.cpp:753]: (style) Local variable sum shadows outer function
+[src/lib/common.h:304] -> [src/lib/model.cpp:770]: (style) Local variable sum shadows outer function
+[src/lib/model.cpp:772] -> [src/lib/model.cpp:777]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/model.cpp:793] -> [src/lib/model.cpp:796]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/model.cpp:810] -> [src/lib/model.cpp:813]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/model.cpp:344]: (style) Variable 'bond_length' is assigned a value that is never used.
+[src/lib/model.h:210]: (style) Unused private function: 'model::initialize'
+[src/lib/model.cpp:720] -> [src/lib/model.h:198]: (performance, inconclusive) Technically the member function 'model::rmsd_lower_bound_asymmetric' can be static (but you may consider moving to unnamed namespace).
+[src/lib/model.cpp:312] -> [src/lib/model.h:207]: (style, inconclusive) Technically the member function 'model::assign_bonds' can be const.
+[src/lib/model.cpp:392] -> [src/lib/model.h:208]: (style, inconclusive) Technically the member function 'model::assign_types' can be const.
+[src/lib/model.cpp:129]: (performance, inconclusive) Technically the member function 'appender::update' can be static (but you may consider moving to unnamed namespace).
+[src/lib/model.cpp:93]: (style) Struct 'appender_info' has a constructor with 1 argument that is not explicit.
+[src/lib/naive_non_cache.cpp:33] -> [src/lib/naive_non_cache.cpp:40]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/naive_non_cache.h:30]: (style) Struct 'naive_non_cache' has a constructor with 1 argument that is not explicit.
+[src/lib/igrid.h:31] -> [src/lib/naive_non_cache.h:31]: (style) The function 'eval' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/igrid.h:32] -> [src/lib/naive_non_cache.h:32]: (style) The function 'eval_deriv' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/non_cache.cpp:34] -> [src/lib/non_cache.cpp:42]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/non_cache.cpp:34] -> [src/lib/non_cache.cpp:52]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/non_cache.cpp:71] -> [src/lib/non_cache.cpp:74]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/non_cache.cpp:88] -> [src/lib/non_cache.cpp:98]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/non_cache.cpp:88] -> [src/lib/non_cache.cpp:109]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/non_cache.cpp:26] -> [src/lib/non_cache.h:34]: (style, inconclusive) Member variable 'non_cache::slope' is in the wrong place in the initializer list.
+[src/lib/igrid.h:31] -> [src/lib/non_cache.h:31]: (style) The function 'eval' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/igrid.h:32] -> [src/lib/non_cache.h:32]: (style) The function 'eval_deriv' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/parallel.h:77]: (warning) Member variable 'aux::par' is not initialized in the constructor.
+[src/lib/parallel.h:170]: (style) Struct 'aux' has a constructor with 1 argument that is not explicit.
+[src/lib/incrementable.h:27] -> [src/lib/parallel_progress.h:35]: (style) The function 'operator++' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/parse_pdbqt.cpp:473]: (style) The scope of the variable 'count' can be reduced.
+[src/lib/parse_pdbqt.h:28] -> [src/lib/parse_pdbqt.cpp:629]: (style, inconclusive) Function 'parse_receptor_pdbqt' argument 1 names different: declaration 'rigid' definition 'rigid_name'.
+[src/lib/parse_pdbqt.h:28] -> [src/lib/parse_pdbqt.cpp:629]: (style, inconclusive) Function 'parse_receptor_pdbqt' argument 2 names different: declaration 'flex' definition 'flex_name'.
+[src/lib/parse_pdbqt.h:29] -> [src/lib/parse_pdbqt.cpp:643]: (style, inconclusive) Function 'parse_receptor_pdbqt' argument 1 names different: declaration 'rigid' definition 'rigid_name'.
+[src/lib/parse_pdbqt.cpp:422] -> [src/lib/parse_pdbqt.cpp:423]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/parse_pdbqt.cpp:427] -> [src/lib/parse_pdbqt.cpp:429]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/parse_pdbqt.cpp:455] -> [src/lib/parse_pdbqt.cpp:457]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/parse_error.h:34]: (warning, inconclusive) Member variable 'parse_error::line' is not initialized in the constructor.
+[src/lib/parse_pdbqt.cpp:129]: (performance) Variable 'relative_coords' is assigned in constructor body. Consider performing initialization in initialization list.
+[src/lib/parse_pdbqt.cpp:79]: (style) Struct 'atom_syntax_error' has a constructor with 1 argument that is not explicit.
+[src/lib/pdb.cpp:29] -> [src/lib/pdb.cpp:31]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/common.h:304] -> [src/lib/bfgs.h:34]: (style) Local variable sum shadows outer function
+[src/lib/bfgs.h:33] -> [src/lib/bfgs.h:35]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/bfgs.h:57] -> [src/lib/bfgs.h:58]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/szv_grid.cpp:43] -> [src/lib/szv_grid.cpp:44]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/szv_grid.cpp:44] -> [src/lib/szv_grid.cpp:45]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/szv_grid.cpp:45] -> [src/lib/szv_grid.cpp:46]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/szv_grid.cpp:57] -> [src/lib/szv_grid.cpp:58]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/szv_grid.cpp:58] -> [src/lib/szv_grid.cpp:59]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/terms.cpp:73] -> [src/lib/terms.cpp:76]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/terms.cpp:202] -> [src/lib/terms.cpp:204]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/terms.cpp:270] -> [src/lib/terms.cpp:272]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/terms.cpp:272] -> [src/lib/terms.cpp:278]: (style) Local variable VINA_MACROS_TMP shadows outer variable
+[src/lib/terms.cpp:38] -> [src/lib/terms.h:75]: (performance, inconclusive) Technically the member function 'conf_independent_inputs::num_bonded_heavy_atoms' can be static (but you may consider moving to unnamed namespace).
+[src/lib/weighted_terms.h:35]: (warning, inconclusive) Member variable 'weighted_terms::t' is not initialized in the constructor.
+[src/lib/weighted_terms.h:35]: (warning, inconclusive) Member variable 'weighted_terms::atom_typing_used_' is not initialized in the constructor.
+[src/lib/weighted_terms.h:35]: (warning, inconclusive) Member variable 'weighted_terms::cutoff_' is not initialized in the constructor.
+[src/lib/scoring_function.h:31] -> [src/lib/weighted_terms.h:30]: (style) The function 'atom_typing_used' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/scoring_function.h:32] -> [src/lib/weighted_terms.h:31]: (style) The function 'cutoff' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/scoring_function.h:33] -> [src/lib/weighted_terms.h:32]: (style) The function 'eval' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/lib/scoring_function.h:34] -> [src/lib/weighted_terms.h:33]: (style) The function 'conf_independent' overrides a function in a base class but is not marked with a 'override' specifier.
+[src/main/main.cpp:568]: (style) Condition 'num_modes<1' is always false
+[src/main/main.cpp:634]: (style) Condition 'verbosity>1' is always true
+[src/main/main.cpp:647]: (style) Condition 'verbosity>1' is always true
+[src/main/main.cpp:342]: (style) Struct 'usage_error' has a constructor with 1 argument that is not explicit.
+[src/main/main.cpp:489]: (error) Uninitialized variable: exhaustiveness
+[src/main/main.cpp:566]: (error) Uninitialized variable: exhaustiveness
+[src/split/split.cpp:136]: (style) Variable 'advanced' is assigned a value that is never used.
+[src/split/split.cpp:53]: (style) Struct 'usage_error' has a constructor with 1 argument that is not explicit.
+[src/split/split.cpp:115]: (performance) Possible inefficient checking for 'lines' emptiness.
+[src/lib/szv_grid.cpp:55]: (style) The function 'average_num_possibilities' is never used.
+[src/lib/pdb.cpp:28]: (style) The function 'check' is never used.
+[src/lib/model.cpp:809]: (style) The function 'check_internal_pairs' is never used.
+[src/lib/current_weights.cpp:25]: (style) The function 'current_weights' is never used.
+[src/lib/terms.cpp:338]: (style) The function 'display_info' is never used.
+[src/lib/model.cpp:70]: (style) The function 'ligand_longest_branch' is never used.
+[src/lib/pdb.cpp:60]: (style) The function 'parse_pdb' is never used.
+[src/lib/model.cpp:830]: (style) The function 'print_stuff' is never used.
+[src/lib/model.cpp:768]: (style) The function 'rmsd_ligands_upper_bound' is never used.
+(information) Cppcheck cannot find all the include files (use --check-config for details)
