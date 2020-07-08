@@ -7,6 +7,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install g++
-      run: sudo apt-get install g++
+      run: sudo apt-get install g++ && which g++
     - name: Build Vina and Vina Split
       run: cd build/linux/release && make depend && make all && ./vina --version
