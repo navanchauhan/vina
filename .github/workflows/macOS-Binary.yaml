@@ -1,0 +1,10 @@
+name: macOS Binary
+on: [push]
+
+jobs:
+  build:
+    name: macOS-Binary
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: cd build/mac/release/ && ./vina --help
