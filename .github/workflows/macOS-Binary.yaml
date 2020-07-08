@@ -14,12 +14,12 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: vina
-        path: vina
+        path: ./vina
     - name: Build Vina_Split
       run: make vina_split
     - name: Upload vina_split
       uses: actions/upload-artifact@v1
       with:
         name: vina_split
-        path: vina_split
+        path: ./vina_split
 
