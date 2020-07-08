@@ -7,6 +7,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Set up Boost
-      run: brew install boost
-    - name: Test Vina
-      run: cd build/mac/release && ./vina --version
+      run: brew install boost@1.72 makedepend
+    - name: Build Vina and Vina Split
+      run: cd build/mac/release && make depend && make all
