@@ -9,4 +9,4 @@ jobs:
     - name: Set up Boost
       run: brew install boost
     - name: Test Vina
-      run: cd build/mac/release && ./vina
+      run: cd build/mac/release && ./vina --version
