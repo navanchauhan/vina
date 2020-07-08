@@ -7,6 +7,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install g++
-      run: sudo apt-get install g++ xutils-dev
+      run: sudo apt-get install g++ xutils-dev && sudo apt-cache search libboost-all-dev
+    - name: Install Boost 1.72
+      run: sudo apt-get install libboost-all-dev==1.72.0
     - name: Build Vina and Vina Split
       run: cd build/linux/release && make depend && make all && ./vina --version
