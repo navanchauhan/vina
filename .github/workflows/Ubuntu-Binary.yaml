@@ -12,3 +12,5 @@ jobs:
       run: brew install boost@1.72
     - name: Build Vina and Vina Split
       run: cd build/linux/release && make depend && make all && ./vina --version
+    - name: Where Am I?
+      run: pwd
