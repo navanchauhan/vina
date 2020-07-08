@@ -1,7 +1,8 @@
-BASE=/usr/local
-BOOST_VERSION=1_41
+BASE=/Users/navanchauhan/development/vina/myBoost
+BOOST_VERSION=1_72
 BOOST_INCLUDE = $(BASE)/include
-C_PLATFORM=-arch i386 -arch ppc -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.4
+C_PLATFORM=-arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/
+ -mmacosx-version-min=10.15
 GPP=/usr/bin/g++
 C_OPTIONS= -O3 -DNDEBUG
 BOOST_LIB_VERSION=

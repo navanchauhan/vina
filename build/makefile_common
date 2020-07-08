@@ -6,11 +6,11 @@ INCFLAGS = -I $(BOOST_INCLUDE)
 
 # -pedantic fails on Mac with Boost 1.41 (syntax problems in their headers)
 #CC = ${GPP} ${C_PLATFORM} -ansi -pedantic -Wno-long-long ${C_OPTIONS} $(INCFLAGS)
-CC = ${GPP} ${C_PLATFORM} -ansi -Wno-long-long ${C_OPTIONS} $(INCFLAGS)
+CC = ${GPP} ${C_PLATFORM} -ansi -pedantic -Wno-long-long ${C_OPTIONS} $(INCFLAGS)
 
 LDFLAGS = -L$(BASE)/lib -L.
 
-LIBS = -l boost_system${BOOST_LIB_VERSION} -l boost_thread${BOOST_LIB_VERSION} -l boost_serialization${BOOST_LIB_VERSION} -l boost_filesystem${BOOST_LIB_VERSION} -l boost_program_options${BOOST_LIB_VERSION}#-l pthread
+LIBS = -l boost_system${BOOST_LIB_VERSION} -l boost_thread -l boost_serialization${BOOST_LIB_VERSION} -l boost_filesystem${BOOST_LIB_VERSION} -l boost_program_options${BOOST_LIB_VERSION}#-l pthread
 
 .SUFFIXES: .cpp .o
 
@@ -34,7 +34,7 @@ vina: $(MAINOBJ) $(LIBOBJ)
 	$(CC) $(LDFLAGS) -o $@ $^ $(LIBS)
 
 vina_split: $(SPLITOBJ)
-	$(CC) $(LDFLAGS) -o $@ $^ $(LIBS)
+	$(CC) -v $(LDFLAGS) -o $@ $^ $(LIBS)
 
 clean:
 	rm -f *.o
