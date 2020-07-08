@@ -10,17 +10,15 @@ jobs:
       run: sudo apt-get install g++ xutils-dev
     - name: Install Boost 1.72
       run: brew install boost@1.72
-    - name: Build Vina
-      run: cd build/linux/release && make depend && make vina && ./vina --version
+    - name: Build Vina and Vina_Split
+      run: cd build/linux/release && make depend && make all && ./vina --version
     - name: Upload vina
       uses: actions/upload-artifact@v1
       with:
         name: vina
         path: ./build/linux/release/vina
-    - name: Build Vina_Split
-      run: cd build/linux/release/ && make vina_split $$ ./vina_split --version && chmod +x vina_split
     - name: Upload Vina_Split
       uses: actions/upload-artifact@v1
       with:
         name: vina_split
-        path: /build/linux/release/vina_split
+        path: ./build/linux/release/vina_split
