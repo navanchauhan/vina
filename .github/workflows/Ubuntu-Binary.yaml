@@ -18,7 +18,7 @@ jobs:
         name: vina
         path: ./build/linux/release/vina
     - name: Build Vina_Split
-      run: make vina_split
+      run: cd build/linux/release/ && make vina_split $$ ./vina_split --version && chmod +x vina_split
     - name: Upload Vina_Split
       uses: actions/upload-artifact@v1
       with:
