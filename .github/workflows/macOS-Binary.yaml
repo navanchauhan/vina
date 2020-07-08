@@ -9,4 +9,17 @@ jobs:
     - name: Set up Boost
       run: brew install boost@1.72 makedepend
     - name: Build Vina and Vina Split
-      run: cd build/mac/release && make depend && make all && ./vina --version
+      run: cd build/mac/release && make depend && make vina && ./vina --version
+    - name: Upload vina
+      uses: actions/upload-artifact@v1
+      with:
+        name: vina
+        path: vina
+    - name: Build Vina_Split
+      run: make vina_split
+    - name: Upload vina_split
+      uses: actions/upload-artifact@v1
+      with:
+        name: vina_split
+        path: vina_split
+
