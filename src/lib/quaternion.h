@@ -76,7 +76,8 @@ inline void quaternion_normalize(qt& q) {
     const fl a = std::sqrt(s);
 	assert(a > epsilon_fl);
 	q *= 1/a;
-	assert(quaternion_is_normalized(q));
+	//assert(quaternion_is_normalized(q));
+	assert(eq(quaternion_norm_sqr(q), 1) && eq(boost::math::abs(q), 1));
 }
 
 inline void quaternion_normalize_approx(qt& q, const fl tolerance = 1e-6) {
@@ -88,7 +89,7 @@ inline void quaternion_normalize_approx(qt& q, const fl tolerance = 1e-6) {
         const fl a = std::sqrt(s);
         assert(a > epsilon_fl);
         q *= 1/a;
-        assert(quaternion_is_normalized(q));
+        assert(eq(quaternion_norm_sqr(q), 1) && eq(boost::math::abs(q), 1));
     }
 }
 
