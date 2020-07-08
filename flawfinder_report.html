@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf8">
+<title>Flawfinder Results</title>
+<meta name="author" content="David A. Wheeler">
+<meta name="keywords" lang="en" content="flawfinder results, security scan">
+</head>
+<body>
+<h1>Flawfinder Results</h1>
+Here are the security scan results from
+<a href="https://dwheeler.com/flawfinder">Flawfinder version 2.0.11</a>,
+(C) 2001-2019 <a href="https://dwheeler.com">David A. Wheeler</a>.
+Number of rules (primarily dangerous function names) in C/C++ ruleset: 223
+<p>
+Examining ./src/main/main.cpp <br>
+Examining ./src/lib/atom_type.h <br>
+Examining ./src/lib/pdb.cpp <br>
+Examining ./src/lib/coords.h <br>
+Examining ./src/lib/bfgs.h <br>
+Examining ./src/lib/parse_pdbqt.h <br>
+Examining ./src/lib/grid.h <br>
+Examining ./src/lib/tree.h <br>
+Examining ./src/lib/matrix.h <br>
+Examining ./src/lib/int_pow.h <br>
+Examining ./src/lib/coords.cpp <br>
+Examining ./src/lib/cache.cpp <br>
+Examining ./src/lib/array3d.h <br>
+Examining ./src/lib/current_weights.h <br>
+Examining ./src/lib/cache.h <br>
+Examining ./src/lib/parallel_progress.cpp <br>
+Examining ./src/lib/file.h <br>
+Examining ./src/lib/monte_carlo.cpp <br>
+Examining ./src/lib/atom_base.h <br>
+Examining ./src/lib/model.h <br>
+Examining ./src/lib/atom.h <br>
+Examining ./src/lib/terms.cpp <br>
+Examining ./src/lib/grid_dim.h <br>
+Examining ./src/lib/mutate.h <br>
+Examining ./src/lib/everything.h <br>
+Examining ./src/lib/ssd.h <br>
+Examining ./src/lib/pdb.h <br>
+Examining ./src/lib/parallel_mc.cpp <br>
+Examining ./src/lib/my_pid.h <br>
+Examining ./src/lib/parallel.h <br>
+Examining ./src/lib/recent_history.h <br>
+Examining ./src/lib/random.cpp <br>
+Examining ./src/lib/random.h <br>
+Examining ./src/lib/tee.h <br>
+Examining ./src/lib/scoring_function.h <br>
+Examining ./src/lib/everything.cpp <br>
+Examining ./src/lib/quasi_newton.cpp <br>
+Examining ./src/lib/ssd.cpp <br>
+Examining ./src/lib/current_weights.cpp <br>
+Examining ./src/lib/igrid.h <br>
+Examining ./src/lib/naive_non_cache.cpp <br>
+Examining ./src/lib/weighted_terms.h <br>
+Examining ./src/lib/common.h <br>
+Examining ./src/lib/non_cache.cpp <br>
+Examining ./src/lib/quaternion.h <br>
+Examining ./src/lib/macros.h <br>
+Examining ./src/lib/atom_constants.h <br>
+Examining ./src/lib/parse_pdbqt.cpp <br>
+Examining ./src/lib/parse_error.h <br>
+Examining ./src/lib/quasi_newton.h <br>
+Examining ./src/lib/quaternion.cpp <br>
+Examining ./src/lib/szv_grid.cpp <br>
+Examining ./src/lib/manifold.cpp <br>
+Examining ./src/lib/statistics.h <br>
+Examining ./src/lib/parallel_progress.h <br>
+Examining ./src/lib/grid.cpp <br>
+Examining ./src/lib/monte_carlo.h <br>
+Examining ./src/lib/terms.h <br>
+Examining ./src/lib/triangular_matrix_index.h <br>
+Examining ./src/lib/manifold.h <br>
+Examining ./src/lib/weighted_terms.cpp <br>
+Examining ./src/lib/mutate.cpp <br>
+Examining ./src/lib/my_pid.cpp <br>
+Examining ./src/lib/parallel_mc.h <br>
+Examining ./src/lib/precalculate.h <br>
+Examining ./src/lib/szv_grid.h <br>
+Examining ./src/lib/conf.h <br>
+Examining ./src/lib/curl.h <br>
+Examining ./src/lib/incrementable.h <br>
+Examining ./src/lib/brick.h <br>
+Examining ./src/lib/model.cpp <br>
+Examining ./src/lib/convert_substring.h <br>
+Examining ./src/lib/naive_non_cache.h <br>
+Examining ./src/lib/non_cache.h <br>
+Examining ./src/split/split.cpp <br>
+
+<h2>Final Results</h2>
+<ul>
+<li>./src/lib/array3d.h:45:37: <b>  [4] </b> (race) <i> access:This usually indicates a security flaw.  If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (<a href="https://cwe.mitre.org/data/definitions/362.html">CWE-362</a>/<a href="https://cwe.mitre.org/data/definitions/367.html">CWE-367</a>!).  Set up the correct permissions (e.g., using setuid()) and try to open the file directly.  </i>
+<pre>
+	friend class boost::serialization::access;
+</pre>
+<li>./src/lib/atom.h:34:37: <b>  [4] </b> (race) <i> access:This usually indicates a security flaw.  If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (<a href="https://cwe.mitre.org/data/definitions/362.html">CWE-362</a>/<a href="https://cwe.mitre.org/data/definitions/367.html">CWE-367</a>!).  Set up the correct permissions (e.g., using setuid()) and try to open the file directly.  </i>
+<pre>
+	friend class boost::serialization::access;
+</pre>
+<li>./src/lib/atom.h:53:37: <b>  [4] </b> (race) <i> access:This usually indicates a security flaw.  If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (<a href="https://cwe.mitre.org/data/definitions/362.html">CWE-362</a>/<a href="https://cwe.mitre.org/data/definitions/367.html">CWE-367</a>!).  Set up the correct permissions (e.g., using setuid()) and try to open the file directly.  </i>
+<pre>
+	friend class boost::serialization::access;
+</pre>
+<li>./src/lib/atom.h:67:37: <b>  [4] </b> (race) <i> access:This usually indicates a security flaw.  If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (<a href="https://cwe.mitre.org/data/definitions/362.html">CWE-362</a>/<a href="https://cwe.mitre.org/data/definitions/367.html">CWE-367</a>!).  Set up the correct permissions (e.g., using setuid()) and try to open the file directly.  </i>
+<pre>
+	friend class boost::serialization::access;
+</pre>
+<li>./src/lib/atom_base.h:32:37: <b>  [4] </b> (race) <i> access:This usually indicates a security flaw.  If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (<a href="https://cwe.mitre.org/data/definitions/362.html">CWE-362</a>/<a href="https://cwe.mitre.org/data/definitions/367.html">CWE-367</a>!).  Set up the correct permissions (e.g., using setuid()) and try to open the file directly.  </i>
+<pre>
+	friend class boost::serialization::access;
+</pre>
+<li>./src/lib/atom_type.h:68:37: <b>  [4] </b> (race) <i> access:This usually indicates a security flaw.  If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (<a href="https://cwe.mitre.org/data/definitions/362.html">CWE-362</a>/<a href="https://cwe.mitre.org/data/definitions/367.html">CWE-367</a>!).  Set up the correct permissions (e.g., using setuid()) and try to open the file directly.  </i>
+<pre>
+	friend class boost::serialization::access;
+</pre>
+<li>./src/lib/cache.h:53:37: <b>  [4] </b> (race) <i> access:This usually indicates a security flaw.  If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (<a href="https://cwe.mitre.org/data/definitions/362.html">CWE-362</a>/<a href="https://cwe.mitre.org/data/definitions/367.html">CWE-367</a>!).  Set up the correct permissions (e.g., using setuid()) and try to open the file directly.  </i>
+<pre>
+	friend class boost::serialization::access;
+</pre>
+<li>./src/lib/common.h:125:37: <b>  [4] </b> (race) <i> access:This usually indicates a security flaw.  If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (<a href="https://cwe.mitre.org/data/definitions/362.html">CWE-362</a>/<a href="https://cwe.mitre.org/data/definitions/367.html">CWE-367</a>!).  Set up the correct permissions (e.g., using setuid()) and try to open the file directly.  </i>
+<pre>
+	friend class boost::serialization::access;
+</pre>
+<li>./src/lib/conf.h:140:37: <b>  [4] </b> (race) <i> access:This usually indicates a security flaw.  If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (<a href="https://cwe.mitre.org/data/definitions/362.html">CWE-362</a>/<a href="https://cwe.mitre.org/data/definitions/367.html">CWE-367</a>!).  Set up the correct permissions (e.g., using setuid()) and try to open the file directly.  </i>
+<pre>
+	friend class boost::serialization::access;
+</pre>
+<li>./src/lib/conf.h:177:37: <b>  [4] </b> (race) <i> access:This usually indicates a security flaw.  If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (<a href="https://cwe.mitre.org/data/definitions/362.html">CWE-362</a>/<a href="https://cwe.mitre.org/data/definitions/367.html">CWE-367</a>!).  Set up the correct permissions (e.g., using setuid()) and try to open the file directly.  </i>
+<pre>
+	friend class boost::serialization::access;
+</pre>
+<li>./src/lib/conf.h:207:37: <b>  [4] </b> (race) <i> access:This usually indicates a security flaw.  If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (<a href="https://cwe.mitre.org/data/definitions/362.html">CWE-362</a>/<a href="https://cwe.mitre.org/data/definitions/367.html">CWE-367</a>!).  Set up the correct permissions (e.g., using setuid()) and try to open the file directly.  </i>
+<pre>
+	friend class boost::serialization::access;
+</pre>
+<li>./src/lib/conf.h:350:37: <b>  [4] </b> (race) <i> access:This usually indicates a security flaw.  If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (<a href="https://cwe.mitre.org/data/definitions/362.html">CWE-362</a>/<a href="https://cwe.mitre.org/data/definitions/367.html">CWE-367</a>!).  Set up the correct permissions (e.g., using setuid()) and try to open the file directly.  </i>
+<pre>
+	friend class boost::serialization::access;
+</pre>
+<li>./src/lib/grid.h:53:37: <b>  [4] </b> (race) <i> access:This usually indicates a security flaw.  If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (<a href="https://cwe.mitre.org/data/definitions/362.html">CWE-362</a>/<a href="https://cwe.mitre.org/data/definitions/367.html">CWE-367</a>!).  Set up the correct permissions (e.g., using setuid()) and try to open the file directly.  </i>
+<pre>
+	friend class boost::serialization::access;
+</pre>
+<li>./src/lib/grid_dim.h:38:37: <b>  [4] </b> (race) <i> access:This usually indicates a security flaw.  If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (<a href="https://cwe.mitre.org/data/definitions/362.html">CWE-362</a>/<a href="https://cwe.mitre.org/data/definitions/367.html">CWE-367</a>!).  Set up the correct permissions (e.g., using setuid()) and try to open the file directly.  </i>
+<pre>
+	friend class boost::serialization::access;
+</pre>
+<li>./src/lib/terms.h:78:37: <b>  [4] </b> (race) <i> access:This usually indicates a security flaw.  If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (<a href="https://cwe.mitre.org/data/definitions/362.html">CWE-362</a>/<a href="https://cwe.mitre.org/data/definitions/367.html">CWE-367</a>!).  Set up the correct permissions (e.g., using setuid()) and try to open the file directly.  </i>
+<pre>
+	friend class boost::serialization::access;
+</pre>
+<li>./src/lib/terms.h:144:37: <b>  [4] </b> (race) <i> access:This usually indicates a security flaw.  If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (<a href="https://cwe.mitre.org/data/definitions/362.html">CWE-362</a>/<a href="https://cwe.mitre.org/data/definitions/367.html">CWE-367</a>!).  Set up the correct permissions (e.g., using setuid()) and try to open the file directly.  </i>
+<pre>
+	friend class boost::serialization::access;
+</pre>
+<li>./src/lib/cache.cpp:81:13: <b>  [1] </b> (buffer) <i> read:Check buffer boundaries if used in a loop including recursive loops (<a href="https://cwe.mitre.org/data/definitions/120.html">CWE-120</a>, <a href="https://cwe.mitre.org/data/definitions/20.html">CWE-20</a>).   </i>
+<pre>
+void cache::read(const path&amp; p) {
+</pre>
+<li>./src/lib/cache.h:41:7: <b>  [1] </b> (buffer) <i> read:Check buffer boundaries if used in a loop including recursive loops (<a href="https://cwe.mitre.org/data/definitions/120.html">CWE-120</a>, <a href="https://cwe.mitre.org/data/definitions/20.html">CWE-20</a>).   </i>
+<pre>
+	void read(const path&amp; name); // can throw cache_mismatch
+</pre>
+</ul>
+<h2>Analysis Summary</h2>
+<p>
+Hits = 18
+<br>
+Lines analyzed = 9279 in approximately 0.17 seconds (54114 lines/second)
+<br>
+Physical Source Lines of Code (SLOC) = 6486
+<br>
+Hits@level = [0]   0 [1]   2 [2]   0 [3]   0 [4]  16 [5]   0 <br>
+Hits@level+ = [0+]  18 [1+]  18 [2+]  16 [3+]  16 [4+]  16 [5+]   0 <br>
+Hits/KSLOC@level+ = [0+] 2.77521 [1+] 2.77521 [2+] 2.46685 [3+] 2.46685 [4+] 2.46685 [5+]   0 <br>
+Dot directories skipped = 2 (--followdotdir overrides)
+<br>
+Minimum risk level = 1
+<br>
+Not every hit is necessarily a security vulnerability.
+<br>
+There may be other security vulnerabilities; review your code!
+<br>
+See '<a href="https://dwheeler.com/secure-programs">Secure Programming HOWTO</a>'
+(<a href="https://dwheeler.com/secure-programs">https://dwheeler.com/secure-programs</a>) for more information.
+</body>
+</html>
