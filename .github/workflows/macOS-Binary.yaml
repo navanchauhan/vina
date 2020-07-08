@@ -8,5 +8,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: Set up Boost
       run: brew install boost
-    - name: Test Vina
-      run: cd build/mac/release && ./vina --version
+    - name: Build Vina
+      run: cd build/mac/release && make depend && make all
