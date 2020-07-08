@@ -1,0 +1,10 @@
+name: Ubuntu Binary
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build Vina and Vina Split
+      run: cd build/linux/release && make depend && make all && ./vina --version
