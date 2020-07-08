@@ -6,5 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: Install g++
+      run: apt-get install g++
     - name: Build Vina and Vina Split
       run: cd build/linux/release && make depend && make all && ./vina --version
