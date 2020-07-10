@@ -1,0 +1,7 @@
+add_executable(main main.cpp)
+target_link_libraries(main vina ${Boost_LIBRARIES})
+message(STATUS "Compiling vina")
+set_property(TARGET main APPEND_STRING PROPERTY LINK_FLAGS " -l boost_system${BOOST_LIB_VERSION} -l boost_thread-mt -l boost_serialization${BOOST_LIB_VERSION} -l boost_filesystem${BOOST_LIB_VERSION} -l boost_program_options${BOOST_LIB_VERSION}")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -L/usr/local/Cellar/boost/1.72.0_3/lib ")#-l boost_system${BOOST_LIB_VERSION} -l boost_thread-mt -l boost_serialization${BOOST_LIB_VERSION} -l boost_filesystem${BOOST_LIB_VERSION} -l boost_program_options${BOOST_LIB_VERSION}")
+set_target_properties(main PROPERTIES INSTALL_RPATH_USE_LINK_PATH TRUE)
+install(TARGETS main DESTINATION bin)
