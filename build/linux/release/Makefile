@@ -1,5 +1,5 @@
-BASE=/home/linuxbrew/.linuxbrew/Cellar/boost/1.72.0_3
-BOOST_VERSION=1_72
+BASE=/home/linuxbrew/.linuxbrew/Cellar/boost/1.74.0
+BOOST_VERSION=1_74
 BOOST_INCLUDE = $(BASE)/include
 C_PLATFORM=-static -pthread
 GPP=/usr/bin/g++

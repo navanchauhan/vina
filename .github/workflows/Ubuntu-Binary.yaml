@@ -8,8 +8,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Install g++
       run: sudo apt-get install g++ xutils-dev
-    - name: Install Boost 1.72
-      run: brew install boost@1.72
+    - name: Install Boost 1.74
+      run: brew install boost@1.74
     - name: Build Vina and Vina_Split
       run: cd build/linux/release && make depend && make all && ./vina --version
     - name: Upload vina
