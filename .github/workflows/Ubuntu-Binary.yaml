@@ -9,7 +9,7 @@ jobs:
     - name: Install g++
       run: sudo apt-get install g++ xutils-dev
     - name: Install Boost 1.74
-      run: brew install boost@1.74
+      run: brew install navanchauhan/homebrew-tap/boost-for-vina
     - name: Build Vina and Vina_Split
       run: cd build/linux/release && make depend && make all && ./vina --version
     - name: Upload vina

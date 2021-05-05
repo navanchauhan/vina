@@ -1,5 +1,5 @@
-BASE=/usr/local/Cellar/boost/1.74.0
-BOOST_VERSION=1_74
+BASE=/usr/local/Cellar/boost-for-vina/1.75.0
+BOOST_VERSION=1_75
 BOOST_INCLUDE = $(BASE)/include/
 C_PLATFORM=-arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/
  -mmacosx-version-min=11.0
