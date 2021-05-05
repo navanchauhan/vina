@@ -15,7 +15,7 @@ jobs:
       with:
         name: vina
         path: ./build/mac/release/vina
-    - name: Upload Vina_Split
+    - name: Upload vina_Split 
       uses: actions/upload-artifact@v1
       with:
         name: vina_split
