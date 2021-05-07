@@ -4,9 +4,22 @@ SPLITOBJ = split.o
 
 INCFLAGS = -I $(BOOST_INCLUDE)
 
+UNAME := $(shell uname)
+
+ifeq ($(UNAME), Linux)
+BASE=/home/linuxbrew/.linuxbrew/Cellar/boost-for-vina/1.75.0
+BOOST_INCLUDE = $(BASE)/include
+C_PLATFORM=-static -pthread
+endif
+ifeq ($(UNAME), Darwin)
+BASE=/usr/local/opt/boost-for-vina
+BOOST_INCLUDE = $(BASE)/include/
+C_PLATFORM=-isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mmacosx-version-min=11.0 -pthread
+endif
+
 # -pedantic fails on Mac with Boost 1.41 (syntax problems in their headers)
 #CC = ${GPP} ${C_PLATFORM} -ansi -pedantic -Wno-long-long ${C_OPTIONS} $(INCFLAGS)
-CC = ${GPP} ${C_PLATFORM} -pedantic -Wno-long-long ${C_OPTIONS} $(INCFLAGS)
+CC = ${GPP} -arch $(shell uname -m) ${C_PLATFORM} -pedantic -Wno-long-long ${C_OPTIONS} $(INCFLAGS)
 
 LDFLAGS = -L$(BASE)/lib -L.
 
